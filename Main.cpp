@@ -36,7 +36,7 @@ double N1(double t, const Variant& v, double g = 9.81) {
     double base = omega * omega * v.R1 * v.R1 + 2 * g * H;
 
     if (base < 0 || v.a == 0 || v.S == 0) {
-        std::cerr << "Помилка при t = " << t << ": некоректні значення (base < 0 або ділення на 0)\n";
+        std::cerr << "Error when t = " << t << ": invalid values (base < 0 or / 0)\n";
         return NAN;
     }
 
@@ -52,7 +52,7 @@ int main() {
     std::ofstream fout("output.txt");     // Вихідний файл
 
     if (!fin.is_open()) {
-        std::cerr << "Помилка відкриття файлу data/input.txt\n";
+        std::cerr << "Error opening data/input.txt\n";
         return 1;
     }
 
@@ -82,8 +82,8 @@ int main() {
                 << "t = " << t << " c, N1 = ";
 
             if (std::isnan(n1)) {
-                fout << "помилка (NaN)\n";
-                std::cout << "помилка (NaN)\n";
+                fout << "error (NaN)\n";
+                std::cout << "error (NaN)\n";
             }
             else {
                 fout << n1 << " watt\n";
