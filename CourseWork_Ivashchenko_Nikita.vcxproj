@@ -133,6 +133,10 @@
     <Text Include="data\input.txt" />
     <Text Include="output.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Графіки.xlsx" />
+    <None Include="Презентація_Захист.pptx" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

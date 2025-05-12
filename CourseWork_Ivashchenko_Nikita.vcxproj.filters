@@ -23,4 +23,8 @@
     <Text Include="data\input.txt" />
     <Text Include="output.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Презентація_Захист.pptx" />
+    <None Include="Графіки.xlsx" />
+  </ItemGroup>
 </Project>
