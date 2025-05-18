@@ -1,1 +1,1 @@
-# CourseWork_Ivashchenko_Nikita
+Курсову роботу виконав Іващенко Нікіта КН-42.2
